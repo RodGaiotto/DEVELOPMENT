@@ -1,0 +1,233 @@
+UX/UI:
+
+AdobeXD, Photoshop.
+
+https://material.io
+
+
+=======================================
+BRIEFING, IMERSÃO E UNPACK
+=======================================
+
+Um grande projeto começa sempre com um briefing bem feito. É no briefing que se entende o objetivo de um projeto, e o objetivo é fundamental para entender o porque daquele trabalho, e se a solução inicialmente imaginada irá gerar o resultado desejado.
+
+Através da imersão, procuramos conhecer o procuramos conhecer o problema, o contexto, o público, os stakeholders, as premissas, as regras de negócio, o histórico, a estratégia, as demandas e as reclamações.
+
+A imersão é a base de conhecimento necessária para que se comece a delinear uma solução.
+
+Geralmente em um Sprint Design, o primeiro dia é conhecido como "UNPACK" e é nessa etapa que podemos ouvir várias informações diferentes, e é fundamental para o sucesso do projeto. Desenvolvedores sabem de coisas que os designers não sabem, os stakeholders sabe de coisas que os product managers não sabem e assim por diante. Isso abre todas as hipóteses possíveis para o projeto.
+
+=======================================
+WIREFRAMES, GRIDS E HIERARQUIA
+=======================================
+
+Estrutura: Como os objetos devem ser posicionados no layout?
+
+Conteúdo: Como serão colocados os conteúdos para ajudar na usabilidade e interatividade do usuário?
+
+Hierarquia Informativa: Como o conteúdo será organizado e apresentado?
+
+Funcionalidade: Como será a usabilidade em cima da interface? Em relação ao Comportamento, como interagir com o usuario? E como ele se comporta?
+
+=======================================
+GRIDS, ALINHAMENTO e ESPAÇAMENTO
+=======================================
+
+Grid: Podemos mais facilmente determinar o fluxo da leitura que queremos que o nosso leitor tenha.
+Nos ajuda a projetar em proporções harmoniosas balanceando os pesos dos elementos gráficos do layout, permite  criar peças mais eficazes.
+
+Nota: Lembre-se sempre de dar atenção ao espaçamento e alinhamento tanto de textos quato de elementos da sua interface, focando sempre na responsividade desses elementos.
+
+=======================================
+LUZES, SOMBRAS, CONSISTENCIA E PADRÃO
+=======================================
+
+Luzes e Sombras: As luzes e sombras são os recursos que garantem movimento, profundidade, sobreposição e contraste em sua interface. É importante para separar elementos, menus, demarcar areas importantes e principalmente indicar ações possíveis em seu projeto.
+
+Consistencia e padrão: Lembrese que o seu projeto deve manter o mesmo tom de redação ( UX Writer), o mesmo padrão visual ( Design System ) e a mesma consistência em diversos devices ( US Design ).
+
+
+=======================================
+CORES
+=======================================
+
+Saber usar as cores em um projeto não é uma tarefa fácil, principalmente quando se está iniciando no área de UI Design. Uma dica importante é conhecer um pouco sobre a psicologia das cores para entregar algo factível ao cliente, Aqui vamos falar sobre algumas regras e teorias que poderão te ajudar a iniciar e não fazer feio duante de um cliente.
+
+
+PALETA PRIMÁRIA: Estas são as cores mais importantes de todo o sistema. A paleta primária é composta pelas cores principais da marca, tons de CINZA, LARANJA e geralmente, o AZUL flat.
+
+PALETA SECUNDÁRIA: Além das cores primárias, suas variações, e tons de cinza, todo designer de interfaces precisa, também, escolher as cores que já tem por padrão um significado próprio. Por exemplo, a cor vermelha é normalmente associada a erro, o verde a sucesso e o amarelo a avisos importantes. Essas cores chamadas "Cores de Feedback" são essenciais dentro de uma interface porque já trazem um significado implícito que já faz parte da cultura do usuário.
+
+VERDE: Sucesso
+AMARELO: Aviso
+VERMELHO: Erro
+LARANJA: Notificação
+CINZA: Mensagem
+
+
+GRADIENTE OU DEGRADÊ:  A volta do uso do gradiente em 2017, trouxe mais elegância para as interfaces vem sendo aplicada em diversas formas, como no redesign de logos como o do Instagram, por exemplo e de maneira muito forte nas User Interfaces tanto Web como Mobile.
+Além do maior impacto visual, estimulando o usuário, o degradê proporciona sensações de dinamismo e movimento, visto que as interfaces precisam ser amigáveis e intuitivas. O uso das cores pode ser vista como tentativa de aproximação e melhoria na experiencia do usuário.
+
+
+TIPOGRAFIAS
+
+Neste contexto, relacionado ao uso de fontes específicas.
+Escolher uma tipografia é como escolher uma roupa, pense no que as roupas podem dizer sobre você. Com base no que você veste, as pessoas podem criar conceitos certeiros ou equivocados sobre seu estilo, sua personalidade, situação econômica, idade ou impressões gerais.
+
+
+TIPOS DE FONTES:
+
+Para simplificar, vamos focar em 4 categorias básicas que serão úteis para entender melhor do assunto e facilitar a escolha de fontes para projetos.
+
+- Serifadas: Fontes serifadas apresentam pequenos traços ou prolongamentos no final de suas letras. Elas geralmente representam os conceitos de seriedade e tradicionalidade.
+- Sem serifa: Fontes sem linhas extras no final das letras. Por esse motivo, são geralmente consideradas mais modernas e dinâmicas.
+- Cursivas (script): Abrange as fontes manuscritas ou caligraficas passando por vários estilos diferentes, de elegante, pessoal e exclusivo a divertido e descontraido.
+- Decorativas ou fantasia (display): Fontes destinadas a chamarem atenção. Elas geralmente são mais inusitadas do que práticas e devem ser usadas em pequenas doses, para efeito e propósito específico.
+
+TAMANHO E PESO:
+
+Se você fez trabalhos para escola ou faculdade provavelmente se lembra das regras da ABNT para diagramação de texto como tipo Times New Roman, tamanho 12, espaçamente entre linhas de 1.5. Tais regras que se relacionam com bastante harmonia em materiais impressos.
+
+Já para utilização em ambiente computacional, existem algumas regras diferentes. O tamanho padrão de um texto no navegador é de 16 pixels. Quando lemos um livro ou um trabalho acadêmico seguramos o papel a uma distância bem próxima dos olhos. Quando operamos um computador a distância em relação a tela é muito maior. Por isso é necessário que o texto esteja em um tamanho confortável em relação a esta distância.
+
+O peso é a grossura dos caracteres de um tipo. Este atributo é definido pela propriedade font-weight. Pode ser normal, bold, bolder e lighter. Ou ainda, se estas opções estiverem disponíveis na fonte escolhida, variar entre um valor numérico de 100 a 900. Sendo a correspondência:
+
+100 - Thin
+200 - Extra Light
+300 - Light
+400 - Normal
+500 - Medium
+600 - Semi Bold
+700 - Bold
+800 - Extra Bold
+900 - Heavy
+
+
+
+=======================================
+COMPONENTES DA INTERFACE DO USUÁRIO
+=======================================
+
+ICONOGRAFIA
+
+A palavra ícone bem do Grego "eikon" e significa imagem. Muito antes do surgimento do design de experiência, os ícones já eram usados como ferramenta de comunicação. Seu objetivo era comunicar eficientemente uma mensagem através de uma linguagem visual comumente compreendida. Os primeiros ícones eram grandes imagens de objetos com as quais os usuários estavam familiarizados, como objetos de escritório e programas de software.
+
+RECOMENDAÇÕES: 
+
+- Mantenha os ícones simples. Simplifique o máximo possível e evite elementos desnecessários. Eles devem traduzir de forma simples a informação que precisam passar no ambiente em que serão usadas.
+
+- Combine os ícones com palavras. As pessoas processam mais rapidamente recursos visuais do que textos, especialmente quando já conhecem os significados desses símbolos. As palavras esclarecem a mensagem de um ícone e dão aos usuários confiança nso resultados de suas interações. Mesmo para ícones universais, incluir um texto é geralmente mais seguro.
+
+- Escolha ícones familiares. A compreensão de um ícone pelo usuário é baseado em suas experiências anteriores. Ao decidir incluir ícones na sua interface, pesquise primeiro e se familiarize com o que está sendo usado em plataformas do mesmo segmento.
+
+- Utilize espaçamento. Tenha sempre pelo menis 1cm x 1cm no mínimo em torno do ícone para melhorar a legíbilidade e fácil toque em celulares. Quando grandes o suficiente, os ícones funcionam bem em telas de dispositivos móveis onde o espaço é limitado.
+
+- Consistência. Concentre-se em elementos comuns para usar em seus ícones. A primeira coisa a considerar é a paleta de cores. Não mais do que três cores para manter o design clean. Não tenha medo de repetir elementos em todos os seus ícones. Repetição ajuda os usuários a identificar ícones e associá-los a uma ação. O peso e estilo do ícone também são decisivos na hora de manter a consitência.
+
+
+=======================================
+UTILIZAÇÃO DE IMAGENS
+=======================================
+
+Uma imagem vale mais que mil palavras. As imagens podem ser usadas de maneira eficiente para capturar a atenção do usuário e diferenciar seu produto. Uma única imagem pode transmitir mais para o observador do que um bloco de texto elaborado. Além disso, as imagens podem atravessar as barreiras linguísticas, algo que um texto não conseguiria.
+Imagem, NÃO pode ser tratada como "decoração", ela tem o poder de melhorar ou quebrar a experiência do usuário.
+
+Os usuários reagem ao visual mais rápido do que um texto, com isso em mente certifique-se de que seu conteúdo coincide com os recursos visuais de apoio. Você deve selecionar as imagens que tem uma forte relação com seus produto e criar um contexto relevante.
+
+O objetivo de seu site ou aplicativo não é exibir mensagens, mas as imagens podem mostrar o propósito de seu produto. Use um número limitado de recursos visuais no design mas use aquela que realmente vai capturar a atenção do usuário.
+
+=======================================
+GUIAS DE ESTILO: MANUAIS DA MARCA
+=======================================
+
+Manual da marca: Criado pelo designer, ou uma equipe de designers, que criaram a identidade visual, ele determina a correta aplicação da marca em diferentes suportes (gráfico, web, etc).
+É um guia que contém todas as informações da marca, fornecendo todas as específicações, recomendações e normas fundamentais para a correta utilização da identidade visual.
+
+O objetivo é preservar uniformidade e coerência e comunicação da marca, mantendo suas propriedades visuais, identificação e reconhecimento da marca independente da plataforma em que ela for aplicada.
+
+
+
+=======================================
+RESPONSIVIDADE
+=======================================
+
+
+A tecnologia muda o mundo constantemente. A internet e o antíssimo nível de desenvolvimento de tecnologias disponíveis, transformaram o nosso modo de acessar informações e de nos relacionar com o mundo.
+
+O Brasil é um dos países que mais cresce em todo o mundo quando o assunto é uso de smartphones. Segundo estudo publicado pela Fundação Getúlio Vargas, alcançamos a marca de um smartphone por habitante em 2017.
+
+O futuro do e-commerce terá como principal responsável o crescimento das compras feitas através de celulares (mobile-commerce).
+
+É importante para qualquer empresa que tenha como foco oferecer para seu consumidor mais facilidade e conforto no momento da experiência de compra, ter um site adaptado para a tela de seu celular ou para qualquer outra tela que ele deseje utilizar, como é o caso dos tablets.
+
+Todos esses cuidados fazem parte da responsividade.
+
+Através da responsividade de um site, que deve levar em conta a usabilidade, que significa ter um site realmente adaptado para que as pessoas consigam acessar e navegar nele com tranquilidade usando apenas uma mão, uma empresa pode oferecer para seu cliente:
+
+- Facilidade e Conforto de acesso
+- Boa Experiência de uso
+- Satisfação ao usuário
+- Fidelização do usuário
+
+
+Ferramentas: Google Resize e Windows Resize (extensão do Chrome).
+
+
+
+=======================================
+ACESSIBILIDADE
+=======================================
+
+Empatia e inclusão: Quando falamos em desenvolver um produto, o foco principal durante o desenvolvimento deles são seus usuários, as pessoas que vão utilizar o sistema com mais frequência. Por esse motivo, fazemos pesquisas com essas pessoas para saber suas dificuldades e receios com relação a tarefa que vai ser executada utilizando o produto. Nessas pesquisas, procuramos entender as tarefas feitas para elas nos colocando em seus lugares e por isso que a empatia é tão importante.
+
+Compreender a acessibilidade significa que podemos construir serviços que funcionam para todos, indepentende da necessidade de seu acesso.
+
+Todo projeto exige uma pesquisa para que se conheça o usuário, é importante saber para quem se está projetando, se os usuários possuem, por exemplo transtorno espectro autista, se são usuários deficientes auditivos ou surdos, com dislexia, com baixa visão, deficiência física, para usuários leitores de tela, dentro outros.
+
+Ferramentas: uxdesign.blog.br: "o que fazer e o que não fazer" que refere-se a acessibilidade.
+
+
+=======================================
+PROTOTIPAGEM
+=======================================
+
+
+A prototipagem é útil, por exemplo, quando é necessario melhorar a experiência dos usuários (UX), atualizar modelos de negócios e criar novos produtos e serviços. Em um projeto de longa duração, pode ser refeita ao longo do processo. Depois dos testes, é possível que seja necessário reenquadrar os protótipos e retestá-los.
+
+Um protótipo pode ser desde uma representação conceitual ou análoga da solução (baixa fidelidade), passando por aspectos da ideia, até a construção de algo mais proximo possivel da solução final (alta fidelidade).
+
+NÍVEIS DE FIDELIDADE:
+
+Baixa: Representação conceitual, análoga à idéia.
+Média: Representação de aspectos da idéia.
+Alta: Mock-up da idéia, representação mais similar possível da idéia.
+
+
+=======================================
+CONTEXTUALIDADE:
+=======================================
+
+Os teste de um protótipo pode envolver ou não usuários finais a ser realizado desde em um laboratório, até no ambiente final onde o produto ou serviço será usado. As diferentes combinações desses elementos representam os níveis de contextualidade.
+
+
+NÍVEIS DE CONTEXTUALIDADE:
+
+Restrita: Em ambiente controlado
+Geral: Qualquer usuário em qualquer ambiente
+Parcial: Usuário final ou ambiente final
+Total: Usuário final e ambiente final
+
+
+
+=======================================
+PORTIFOLIO, CLIENTES E APRESENTAÇÃO
+=======================================
+
+O portifolio é uma das principais ferramentas de qualquer profissional. É através dele que podemos mostrar o nosso trabalho a um potencial empregador ou cliente. Além disso, ter um portfólio pode ajudar a passar uma imagem mais profissional.
+Lembre-se de inserir em seus cases do portfolio, o desafio trazido pelo cliente, a solução sugerida a ele e também como você chegou a essa solução, além é claro do projeto finalizado.
+
+Uma boa apresentação garante novos clientes e demonstra seu profissionalismo.
+
+
+
+
