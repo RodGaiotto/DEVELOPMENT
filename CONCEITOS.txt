@@ -9,6 +9,20 @@ https://www.lipsum.com
 OTIMIZADOR DE IMAGENS:
 https://tinypng.com/
 
+FONTES:
+https://fontawesome.com/
+
+
+CAPAS DE SERIES E FILMES:
+https://www.themoviedb.org/
+
+CARROSSEL DE IMAGENS - JQUERY:
+https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
+
+
+KEYCODE EVENTS JAVASCRIPT:
+https://keycode.info/
+
 
 
 HTML5
