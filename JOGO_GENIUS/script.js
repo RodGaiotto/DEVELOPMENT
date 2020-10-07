@@ -14,6 +14,16 @@ let score = 0;
 //2 - Amarelo
 //3 - Azul
 
+//Variaveis do audio:
+const somGreen=document.getElementById("somGreen");
+const somBlue=document.getElementById("somBlue");
+const somRed=document.getElementById("somRed");
+const somYellow=document.getElementById("somYellow");
+
+
+
+
+
 //Definição das classes do CSS (como no CSS)
 const blue = document.querySelector('.blue');
 const red = document.querySelector('.red');
@@ -35,7 +45,8 @@ let shuffleOrder = () => {
 
         //Transformando a cor da div para guiar o jogador
         lightColor(elementColor, Number(i) + 1);
-    }
+
+        }
 }
 
 //Acende a proxima cor
@@ -102,13 +113,18 @@ let click = (color) => {
 //Funcao que retorna a cor
 
 let createColorElement = (color) => {
+
     if (color == 0) {
+        somGreen.play();
         return green;
     } else if (color == 1) {
+        somRed.play();
         return red;
     } else if (color == 2) {
+        somYellow.play();
         return yellow;
     } else if (color == 3) {
+        somBlue.play();
         return blue;
     }
 }
@@ -142,6 +158,7 @@ let playGame = () => {
     score = 0;
 
     nextLevel();
+
 }
 
 //Capturando os clicks
