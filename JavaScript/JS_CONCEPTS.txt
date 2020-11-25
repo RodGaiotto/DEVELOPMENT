@@ -1,0 +1,1367 @@
+git@github.com:RodGaiotto/Development.git
+
+
+CODE RUNNER -> CONTROL + ALT + N para rodar codigo JS no OUTPUT do VSCODE.
+
+
+
+INTRODUÇÃO AO JAVA SCRIPT:
+
+- Linguagem de script e multiplataforma
+- Client Side, executado do lado do cliente (usuário)
+- Capacidade de interagir com elementosde uma página HTML
+- Muito usado no desenvolvimentode páginas e também aplicativos mobile híbridos
+
+
+DOM - DOCUMENT OBJECT MODEL
+
+
+É o que permite a interação do JavaScript com o HTML. O DOM (elemento carregado pelo navegador) permite ao JS alterar qualquer tipo de elemento HTML, além de atributos e estilos de CSS em uma página.
+
+
+
+Brendan Eich foi o criador do JavaScript e a linguagem teve dois nomes anteriores: Mocha e Livescript e foi lançado junto com a versão beta do Netscape 2.0
+
+Javascript é uma linguagem de funções de primeira classe e funções de ordem maior, pois é possível atribuir funções a variáveis, retornar funções de outras funções e passar funções como parâmetro para outras funções.
+
+
+
+===============================================================
+
+ECMAScript:
+
+ECMAScript é uma especificação de linguagem script criada pela Ecma International, utilizada por linguagens como: ActionScript, JScript e Javascript.
+TC39 é o nome do comitê responsável pela evolução do ECMAScript.
+
+
+===============================================================
+
+
+Hoisting e tipos:
+
+
+Hoisting ou içamento é a capacidade do JavaScript elevar a criação de variáveis e funções ao topo do escopo de suas criações. Existem dois tipos de Hoisting: hoisting de variável e hoisting de função.
+
+
+==============================================================
+
+Closure:
+
+Closure ou escopo léxico é a capacidade da função "lembrar" do seu contexto de criação.
+
+
+============================================================
+
+
+
+=============================================================
+
+Fluxos para submeter uma proposta ao TC39:
+
+Stage 0: strawman, Stage 1: proposal, Stage 2: draft, Stage 3: candidate e Stage 4: finished
+
+
+=============================================================
+
+
+var, let e const. são as formas de atribuição de uma variável.
+
+
+
+
+
+==============================================================
+
+O JavaScript possui tipagem fraca e dinâmica:
+
+
+- O tipo da variável no JavaScript é definido no momento de sua atribuição, esse processo se chama inferência de tipo.
+
+- Não é lançado um erro ou uma Exception durante a execução de:  1 + "texto".
+
+- Para mudarmos o tipo de uma variável já existente, basta setar um valor de outro tipo:
+
+Exemplo: 
+
+var teste = 1;
+
+teste = 'texto';
+
+- Não é necessário explicitar o tipo na criação de uma variável no JavaScript.
+
+
+
+
+
+EXEMPLOS:
+
+Na estrutura HTML você observa o seguinte comando:
+
+<body onload="carregou()">
+
+A função "carregou" será chamada assim que a página web for carregada, mas seu conteúdo pode ser diverso.
+
+
+
+-------------------------------
+
+
+Você tem uma página de web com vários bichos de pelúcia e quer presentear alguém com um personagem do desenho animado "Ursinhos Carinhosos". Para isso você usa o seguinte código JavaScript e HTML
+
+JavaScript:
+document.getElementById("selecionado").innerHTML = "Escolheu: " + nome_personagem.
+
+HTML: 
+<button id="coração_valente" onclick="selecionou()">Coração Valente</button>
+
+
+-----------------------------------
+
+
+O comando  window.open abre a página em outra janela.
+
+O redirecionamento permite que o usuário saia da página atual e vá para outra, seja através da aba ou da janela. 
+
+
+-------------------------------------
+
+Os parâmetros de uma função são passados durante a chamada da função, podendo cada uma trazer valores de string, inteiro, arrays e entre outros.
+
+------------------------------------
+
+A variável local é declarada dentro de uma função, enquanto a variável global é declarada fora da função e pode ser usada dentro da função.
+
+----------------------------------------
+
+
+Evento onChange?
+
+
+É disparado quando o valor de um elemento é mudado, como em radiobuttons e checkboxes por exemplo.
+
+
+-----------------------------------------
+
+Você precisa criar uma tela na qual possua uma espécie de vitrine com vários objetos, cada objeto é um jogo de tabuleiro. A imagem do objeto é a capa da embalagem do jogo. Ao passar o mouse, a pessoa consegue ver o verso da embalagem, mas ao tirar o mouse volta para a capa da embalagem. Ao clicar, a pessoa pode ver fotos do conteúdo do jogo:
+
+
+<button id="eldritch_horror" onclick="detalhes(this)" onmouseover="mousesobre(this)" onmouseout="mousefora(this)">Eldritch Horror</button>
+
+------------------------------------------
+
+Valores podem ser passados para uma função, que retorna uma variável.
+
+------------------------------------------
+
+Evento OnMouseOver:
+
+
+Definir a ação quando o usuário passa o mouse sobre o elemento.
+
+-------------------------------------------
+
+Você está programando a tela de um jogo. Existem 3 opções de personagens para você escolher e eles são de raças diferentes, sendo um humano, um elfo e um orc. Sempre que você selecionar um personagem, uma tag <p> deve escrever os poderes específicos de cada raça:
+
+<select onchange="mostrarPoderes(this)"><option value="Humano"></option><option value="Elfo"></option><option value="Orc"></option></select>
+
+
+
+
+JS Tipos de variáveis:
+
+string
+number
+boolean
+null
+undefined
+symbol
+Object
+Function
+Array
+
+
+
+/Retorna o tamanho de uma string
+const textSize = 'Texto'.length;
+console.log(`Quantidade de letras: ${textSize}`);
+
+
+
+
+
+FILTER, MAP, REDUCE
+Trabalhando com arrays
+
+
+
+ARRAY.PROTOTYPE.FILTER()
+
+Cria um novo array com todos os elementos que passaram no teste ad função fornecida.
+
+var newArray = arr.filter(callback[,thisArg]);
+
+
+
+FOR CONVENCIONAL:
+
+for ( var i = 0; i < array.lenght; i++) {
+
+	if ( array.indexOf( array[ i ] ) === i ){
+
+	models.push(array[ i ]);
+		
+	}
+}
+
+
+--------------------------
+
+MESMA FUNÇÃO UTILIZANDO FILTER:
+
+var uniqueProducts = array.filter( function( elem, i, array ) {
+
+	return array.indexOf( elem ) === i;
+} );
+
+
+
+Exemplo:
+
+const pets = [
+	{
+		name: "rex",
+		type: "dog",
+		age: 10
+
+	},
+	{
+		name: "miau",
+		type: "cat",
+		age: 5
+
+	},
+	{
+		name: "gulp",
+		type: "fish",
+		age: 1
+
+	}
+];
+
+console.log(pets);
+
+
+ARRAY.PROTOTYPE.MAP()
+
+Chama o callback para cada elemento (varre o array) e devolve um novo array com a mesma quantidade de itens.
+
+var newArray = arr.map(callback[,thisArg])
+
+
+Exemplo ilustrativo:
+
+map([vaca, batata, frango, milho], cook) => [hamburguer, batatafrita, coxinha, pipoca];
+
+
+
+ARRAY.PROTOTYPE.REDUCE()
+
+Executa uma função para cada elemento retornando um único valor.
+
+var newArray = arr.map(callback[, valorinicial])
+
+
+Exemplo ilustrativo:
+
+reduce([hamburguer, batatafrita, coxinha, pipoca], eat) => cocô
+
+
+
+
+
+PRÁTICA:
+
+const pets = [
+	{
+		name: "Rex",
+		type: "dog",
+        age: 10,
+        weight: 30
+
+	},
+	{
+		name: "Miau",
+		type: "cat",
+		age: 4,
+        weight: 10
+
+	},
+	{
+		name: "Gulp",
+		type: "fish",
+		age: 1,
+        weight: 24
+
+    },
+    {
+		name: "Papum",
+		type: "shark",
+		age: 14,
+        weight: 1000
+
+	},
+    {
+		name: "Super",
+		type: "dog",
+		age: 23,
+        weight: 9
+
+	},
+    {
+		name: "Nori",
+		type: "cat",
+		age: 6,
+        weight: 4
+
+	}
+];
+
+console.log(pets);
+
+
+//TRABALHANDO COM FILTER
+const newPets = pets.filter((pet) => {
+    return pet.age < 5
+});
+
+console.log(newPets);
+
+//Usando FILTER e FUNCAO:
+const eMenorQueCinco = (numero) => {
+    return numero < 5
+}
+
+const newPets2 = pets.filter((pet) => {
+    return eMenorQueCinco(pet.age)
+});
+
+console.log(newPets2);
+
+
+//TRABALHANDO COM MAP
+const petNames = pets.map((pet) => {
+
+   return pet.name 
+
+});
+
+console.log(petNames);
+
+
+//Mesmo resultado utilizando FOREACH
+
+const forEachPetNames = [];
+
+pets.forEach((pet) => {
+
+    forEachPetNames.push(pet.name);
+
+});
+
+
+console.log(forEachPetNames);
+
+
+//TRABALHANDO COM REDUCE
+
+const dogObject = pets.reduce((dogObject, pet) => {
+
+    if (pet.type !== 'dog') return dogObject;
+
+    dogObject.ageSum += pet.age;
+
+    dogObject.weightSum += pet.weight;
+
+    return dogObject
+
+}, { ageSum: 0, weightSum: 0 });
+
+console.log('DogObject: ', dogObject);
+
+
+
+
+DICAS:
+
+
+O comando object.freeze (); deve ser usado para que o objeto não sofra mudança sob nenhuma circunstância. O object.freeze não permite a criação, alteração nem a remoção de propriedades. 
+
+---------------------------------------
+
+O comando object.seal não permite que a propriedade seja deletada nem criada.
+
+---------------------------------------
+
+Exemplo de OBJETO e ATRIBUTOS:
+
+Object.personagem(velocidade);
+
+let personagem = {
+  velocidade : 9,
+  poder : 15,
+  sorte : 20
+}
+
+---------------------------------------
+
+
+Exemplo de substr();
+
+
+const filosofo = "Sócrates"
+
+Para trocarmos "Sócrates" por "Hipócrates":
+
+filosofo = "Hipó" + filosofo.substr(2, 7)
+
+
+---------------------------------------
+
+Retornar 2 casas decimais depois da virgular:
+
+numeroPi = numeroPi.toFixed(2), para retornar "3,14"
+
+
+---------------------------------------
+
+O typeof é um operador unário que retorna em um string indicando um tipo de operando.
+
+
+---------------------------------------
+
+Operadores binários retornam o resultado da divisão de dois operandos.
+Operadores unários possuem apenas um operando, que podem vir antes ou depois do operador.
+
+---------------------------------------
+
+const filmes = ['Meia-noite em Paris', 'Machete', 'Taxi Driver', 'Matrix']
+
+for(let filme of filmes)
+
+---------------------------------------
+
+
+const frase = "Science without religion is lame, religion without science is blind."
+
+frase.replace("without", "with");
+
+Output:
+
+"Science with religion is lame, religion without science is blind."
+
+
+---------------------------------------
+
+
+const bandas = [
+{
+  name: 'The Who',
+  genero: 'Rock'
+},
+{
+  name: 'Queen',
+  genero: 'Rock'
+},
+{
+  name: 'Lenine',
+  genero: 'MPB'
+},
+{
+  name: 'Tim Maia',
+  genero: 'MPB'
+}
+];
+
+
+const rock = bandas.filter(bandas => bandas.genero === 'Rock')
+
+
+---------------------------------------
+
+Design Patterns ou padrões de projetos são soluções generalistas para problemas recorrentes durante o desenvolvimento de um software. Não se trata de um framework ou um código pronto, mas de uma definição de alto nível de como um problema comum pode ser solucionado.
+
+
+----------------------------------------
+
+
+Analisando o código abaixo, quais serão as saídas dos console.log:
+
+
+
+function Pessoa(nome) {
+  this.nome = nome;
+}
+
+function PessoaFisica(nome, cpf) {
+
+  Pessoa.call(this, nome);
+
+  this.cpf = cpf;
+}
+
+function PessoaJuridica(nome, cnpj) {
+
+  Pessoa(nome);
+
+  this.cnpj = cnpj;
+
+}
+
+
+const pessoaFisica = new PessoaFisica('Foo', '123.456.670-0');
+const pessoaJuridica = new PessoaJuridica('Bar', '12.345.678/9012-34');
+
+console.log(pessoaFisica);
+console.log(pessoaJuridica);
+
+
+OUTPUT:
+'PessoaFisica {nome: "Foo", cpf: "123.456.670-0"}' e 'PessoaJuridica {cnpj: "12.345.678/9012-34"}'.
+
+
+
+----------------------------------------
+
+
+class ID {
+
+	static #contador = 0;
+
+	static get contador() {
+
+    	return this.#contador;
+}
+
+
+	static incrementaContador() {
+
+	return ++this.#contador;
+  }
+
+}
+
+
+
+class Cliente {
+
+  #id = 0;
+
+  constructor() {
+
+    this.#id = ID.incrementaContador();
+
+  }
+
+  get id() {
+
+    return this.#id;
+
+  }
+
+}
+
+
+const c1 = new Cliente();
+
+console.log(`Contador atual: ${ID.contador}.`);
+
+
+const c2 = new Cliente();
+
+const c3 = new Cliente();
+
+
+console.log(`Contador atual: ${ID.contador}.`);
+
+
+
+Notas:
+- É possível chamar o método "incrementaContador" sem instanciar a classe ID pois o método possui a palavra-chave static.
+- A saídas dos console.log são respectivamente: "Contador atual: 1." e "Contador atual: 3.".
+- É possível instanciar a classe ID mas sua instancia não herdará os atributos/métodos com a palavra-chave static.
+
+
+----------------------------------------
+
+Exemplo de Decorator parttern:
+
+
+
+function adicionaUsuarioLogado(fn) {
+
+  const usuarioLogado = {
+
+    nome: 'Foo',
+
+    sobrenome: 'Bar'
+  };
+
+
+  fn(usuarioLogado);
+
+}
+
+
+function executaSeUsuarioEstaLogado(usuarioLogado, fn) {
+
+  if (!usuarioLogado) {
+
+    console.log('Usuário não está logado.');
+
+    return;
+  }
+
+ 
+  fn();
+
+}
+
+
+function notificaUsuarioLogado(usuarioLogado) {
+
+  console.log(`Bem-vindo usuário ${usuarioLogado.nome}!`);
+
+}
+
+
+adicionaUsuarioLogado(
+
+  usuarioLogado => executaSeUsuarioEstaLogado(usuarioLogado, () => {
+
+    notificaUsuarioLogado(usuarioLogado);
+
+  })
+
+);
+
+
+
+
+----------------------------------------
+
+function Conta() {}
+
+Conta.prototype.rendimento = 0;
+
+Conta.prototype.depositar = function() {}
+
+Conta.prototype.retirar = function() {}
+
+Conta.prototype.exibirSaldo = function() {
+
+  return `O saldo da conta é: ${this.saldo}.`;
+
+}
+
+
+function ContaPoupanca() {
+
+  this.exibirSaldo = function() {
+
+    return 'Operação não disponível';
+  }
+}
+
+
+
+ContaPoupanca.prototype.rendimento = 0.03;
+
+ContaPoupanca.prototype = Object.create(Conta.prototype);
+
+
+const contaPoupanca = new ContaPoupanca();
+
+
+Nota:
+- A variável "contaPoupanca" será uma instância de ContaPoupanca, ou seja, a expressão "contaPoupanca instanceof ContaPoupanca" retornará true.
+- O retorno da função "contaPoupanca.__proto__.exibirSaldo()" será: "O saldo da conta é: undefined.".
+
+
+----------------------------------------
+
+
+const name = 'Foo';
+
+const lastName = String('Bar');
+
+
+NOTA: Todas as seguintes comparações retornam TRUE:
+
+name.constructor === lastName.constructor
+
+lastName.__proto__ === String.prototype
+
+name.__proto__.split === lastName.__proto__.split
+
+
+----------------------------------------
+
+
+function Pessoa(nome, idade) {
+
+  this.nome = nome;
+
+  this.idade = idade;
+
+
+  return {
+
+    nome,
+
+    idade: 20,
+
+    falar() {
+
+      console.log('objeto falar');
+    }
+  }
+}
+
+
+Pessoa.prototype.falar = function() {
+
+  console.log('prototype falar');
+
+};
+
+
+const pessoa = new Pessoa('Foo', 30);
+
+
+NOTAS:
+
+- O retorno será um objeto "{ nome: 'Foo', idade: 20 }". Pois mesmo chamando a função Pessoa com a palavra-chave new, a função possui retorno explicito.
+
+- A expressão "pessoa.constructor === Object" retornará true. Pois o retorno da função é um objeto.
+
+- A expressão "pessoa.__proto__.falar === undefined" retornará true. Pois como há retorno explícito de um objeto na função Pessoa, suas definições não são passadas a esse objeto.
+
+
+----------------------------------------
+
+Exemplo de funções FACTORY:
+
+---------
+
+function Pessoa(nome) {
+
+  return {
+
+    nome
+
+  };
+}
+
+
+-----------
+
+function recuperaDadosFormulario(formulario) {
+
+  if (!formulario) {
+
+    return {};
+
+  }
+
+  const dados = {
+
+    nome: formulario.nome,
+
+    idade: formulario.idade
+
+  };
+
+  return dados;
+}
+
+-----------
+
+
+----------------------------------------
+
+class Pessoa {
+
+  #nome = '';
+
+  constructor(nome) {
+
+    this.#nome = nome;
+  }
+
+
+  get nome() {
+
+    return `Seu nome é: ${this.#nome}.`;
+  }
+
+
+  set nome(novoNome) {
+
+    this.#nome = novoNome;
+  }
+}
+
+
+const pessoa = new Pessoa();
+
+
+console.log(pessoa);
+
+console.log(pessoa.nome);
+
+pessoa.nome = 'Foo';
+
+console.log(pessoa.nome);
+
+
+OUTPUT:
+"Pessoa {#nome: "Foo"}", "Seu nome é: undefined." e "Seu nome é: Foo."
+
+
+----------------------------------------
+
+
+Pattern Singleton cria uma única instância de uma função construtora e a retorna toda vez em que for necessário utilizá-la.
+
+----------------------------------------
+
+
+const colaboradores = [
+
+  { nome: "Cris", horasTrabalhadas: 220 },
+
+  { nome: "Rebeca", horasTrabalhadas: 210 }
+
+];
+
+
+function adicionaSalario(colaborador) {
+
+  const salario = colaborador.horasTrabalhadas * 50;
+
+  colaborador.salario = salario;
+
+  return {
+
+    salario: salario
+
+  };
+}
+
+
+const colaboradoresComSalario = colaboradores.map(adicionaSalario);
+
+console.log(colaboradoresComSalario);
+
+
+OUTPUT:
+[{salario: 11000}, {salario: 10500}]
+
+
+----------------------------------------
+
+
+const frutas = ["amora", "laranja", "melancia", "acerola"];
+
+
+frutas.sort();
+
+frutas.reverse();
+
+
+
+OUTPUT:
+["melancia", "laranja", "amora", "acerola"]
+
+
+----------------------------------------
+
+
+const familiaPai = ["Avó Zeca", "Avô Aroldo"];
+
+const familiaMae = ["Avô Carlos", "Primo João Paulo"];
+
+
+const familiaFilho = familiaPai.concat(familiaMae);
+
+
+console.log(familiaPai);
+
+console.log(familiaMae);
+
+console.log(familiaFilho);
+
+
+OUTPUT:
+["Avó Zeca", "Avô Aroldo"], ["Avô Carlos", "Primo João Paulo"] e ["Avó Zeca", "Avô Aroldo", "Avô Carlos", "Primo João Paulo"]
+
+
+
+----------------------------------------
+
+
+Adicionar a fruta "amora" após a fruta "melancia" e removendo as frutas "abacaxi" e "caju":
+
+
+const frutas = ["maracujá", "melancia", "abacaxi", "caju"];
+
+
+frutas.splice(2, 2, "amora");
+
+
+// resultado esperado: ["maracujá", "melancia", "amora"];
+
+
+
+----------------------------------------
+
+
+const pessoas = ["Cris", "Alexandre", "Pablo", "Cris"];
+
+
+console.log(pessoas.indexOf("Cris"));
+
+console.log(pessoas.findIndex(nome => nome === "Cris"));
+
+console.log(pessoas.lastIndexOf("Cris"));
+
+console.log(pessoas.find(nome => nome === "Cris"));
+
+
+
+OUTPUT:
+0, 0, 3, "Cris"
+
+
+----------------------------------------
+
+const frutas = ["amora", ["laranja", ["melancia"], "acerola"]];
+
+console.log(frutas.flat(2));
+
+
+OUTPUT:
+["amora", "laranja", "melancia", "acerola"]
+
+
+----------------------------------------
+
+const person = ["Cris"];
+
+
+person.push("James", "Jenny");
+
+person.push("John");
+
+
+console.log(person);
+
+
+OUTPUT:
+["Cris", "James", "Jenny", "John"]
+
+
+----------------------------------------
+
+Criar um array em que seu primeiro elemento possua o valor 2 (tipo int):
+
+- [2];
+
+- Array.of(2);
+
+----------------------------------------
+
+const alunos = [
+
+  { nome: "Cris", nota: 10 },
+
+  { nome: "Alexandre", nota: 7 },
+
+  { nome: "Pablo", nota: 4 }
+
+];
+
+
+function alunoAprovado(aluno) {
+
+  return aluno.nota >= 7;
+
+}
+
+
+console.log(alunos.filter(alunoAprovado));
+
+console.log(alunos.some(alunoAprovado));
+
+console.log(alunos.every(alunoAprovado));
+
+
+
+OUTPUT:
+
+[{ nome: "Cris", nota: 10 }, { nome: "Alexandre", nota: 7 }], true, false
+
+
+----------------------------------------
+
+const frutas = ["melancia", "laranja", "acerola"];
+
+
+Remover o item "acerola" alterando o array "frutas":
+
+- frutas.pop();
+
+- frutas.splice(2, 1);
+
+
+
+
+
+EXECUTION LOGS:
+
+
+[rgaiotto@oc5255651151 ~]$ cd Desktop/HTML_CSS_Basic/
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ mkdir JavaScript
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ cd JavaScript/
+[rgaiotto@oc5255651151 JavaScript]$ cd ..
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git init
+Initialized empty Git repository in /home/rgaiotto/Desktop/HTML_CSS_Basic/.git/
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ echo "# Webdevelopment Course" >> README.md
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add README.md
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git commit -m "first commit"
+[master (root-commit) de0617a] first commit
+ Committer: Rodrigo <rgaiotto@oc5255651151.ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git remote add origin git@github.com:RodGaiotto/WebDevTraining.git
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+To git@github.com:RodGaiotto/WebDevTraining.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:RodGaiotto/WebDevTraining.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first merge the remote changes (e.g.,
+hint: 'git pull') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git pull -u origin master
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+warning: no common commits
+remote: Enumerating objects: 57, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Compressing objects: 100% (39/39), done.
+remote: Total 57 (delta 10), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (57/57), done.
+From github.com:RodGaiotto/WebDevTraining
+ * branch            master     -> FETCH_HEAD
+Already up-to-date!
+Merge made by the 'recursive' strategy.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 391 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To git@github.com:RodGaiotto/WebDevTraining.git
+   6a7724b..e51b941  master -> master
+Branch master set up to track remote branch master from origin.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git init .
+Reinitialized existing Git repository in /home/rgaiotto/Desktop/HTML_CSS_Basic/.git/
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add .
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git commit -m "Pushing training files"
+[master 13df322] Pushing training files
+ Committer: Rodrigo <rgaiotto@oc5255651151.ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 13 files changed, 907 insertions(+)
+ create mode 100644 CONCEITOS.txt
+ create mode 100644 UX_UI_concepts.txt
+ create mode 100644 apple_store_button.png
+ create mode 100644 cellphone_instagram.png
+ create mode 100644 google_play_button.png
+ create mode 100644 image_top.jpeg
+ create mode 100644 index.html
+ create mode 100644 instagram.html
+ create mode 100644 instagram_logo.png
+ create mode 100644 robot.jpg
+ create mode 100644 rodgaiotto.jpg
+ create mode 100644 style.css
+ create mode 100644 style2.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 1.41 MiB | 668.00 KiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0)
+To git@github.com:RodGaiotto/WebDevTraining.git
+   e51b941..13df322  master -> master
+Branch master set up to track remote branch master from origin.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ cd JavaScript/
+[rgaiotto@oc5255651151 JavaScript]$ 
+[rgaiotto@oc5255651151 JavaScript]$ LS
+bash: LS: command not found...
+Similar command is: 'ls'
+[rgaiotto@oc5255651151 JavaScript]$ ls
+[rgaiotto@oc5255651151 JavaScript]$ touch js
+[rgaiotto@oc5255651151 JavaScript]$ cd ..
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add .
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add JavaScript
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ cd JavaScript/
+[rgaiotto@oc5255651151 JavaScript]$ ls
+js
+[rgaiotto@oc5255651151 JavaScript]$ mv js js.txt
+[rgaiotto@oc5255651151 JavaScript]$ vi js.txt 
+[rgaiotto@oc5255651151 JavaScript]$ cd ..
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls -lah
+total 1.6M
+drwxrwxr-x.  4 rgaiotto rgaiotto 4.0K Aug 31 16:58 .
+drwxr-xr-x. 20 rgaiotto rgaiotto  20K Aug 31 10:09 ..
+-rw-rw-r--.  1 rgaiotto rgaiotto 322K Aug 29 00:00 apple_store_button.png
+-rw-rw-r--.  1 rgaiotto rgaiotto 589K Aug 29 00:07 cellphone_instagram.png
+-rw-r--r--.  1 rgaiotto rgaiotto  20K Aug 27 22:58 CONCEITOS.txt
+drwxrwxr-x.  8 rgaiotto rgaiotto 4.0K Aug 31 18:02 .git
+-rw-rw-r--.  1 rgaiotto rgaiotto  14K Aug 28 17:38 google_play_button.png
+-rw-r--r--.  1 rgaiotto rgaiotto 136K Aug 27 10:51 image_top.jpeg
+-rw-rw-r--.  1 rgaiotto rgaiotto 2.0K Aug 28 14:09 index.html
+-rw-rw-r--.  1 rgaiotto rgaiotto 1.9K Aug 30 11:56 instagram.html
+-rw-rw-r--.  1 rgaiotto rgaiotto  22K Aug 28 17:51 instagram_logo.png
+drwxrwxr-x.  2 rgaiotto rgaiotto 4.0K Aug 31 18:02 JavaScript
+-rw-rw-r--.  1 rgaiotto rgaiotto   24 Aug 31 16:58 README.md
+-rw-rw-r--.  1 rgaiotto rgaiotto 8.3K Aug 27 10:48 robot.jpg
+-rw-rw-r--.  1 rgaiotto rgaiotto 373K Aug 29 00:33 rodgaiotto.jpg
+-rw-rw-r--.  1 rgaiotto rgaiotto 2.8K Aug 30 12:08 style2.css
+-rw-rw-r--.  1 rgaiotto rgaiotto  947 Aug 28 14:44 style.css
+-rw-r--r--.  1 rgaiotto rgaiotto  16K Aug 31 14:32 UX_UI_concepts.txt
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   JavaScript/js
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    JavaScript/js
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	JavaScript/js.txt
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add ./JavaScript/js.txt
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git commit
+[master 030420e] JavaScript training
+ Committer: Rodrigo <rgaiotto@oc5255651151.ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+)
+ create mode 100644 JavaScript/js
+ create mode 100644 JavaScript/js.txt
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 364 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:RodGaiotto/WebDevTraining.git
+   13df322..030420e  master -> master
+Branch master set up to track remote branch master from origin.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    JavaScript/js
+#	deleted:    JavaScript/js.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	JavaScript/index.html
+no changes added to commit (use "git add" and/or "git commit -a")
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'JavaScript/js' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add --all
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   JavaScript/index.html
+#	deleted:    JavaScript/js
+#	deleted:    JavaScript/js.txt
+#	new file:   JavaScript/js/main.js
+#
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ commit -m "Atualizações da aula de JS"
+bash: commit: command not found...
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git commit -m "Atualizações da aula de JS"
+[master 79befd0] Atualizações da aula de JS
+ Committer: Rodrigo <rgaiotto@oc5255651151.ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 240 insertions(+), 1 deletion(-)
+ create mode 100644 JavaScript/index.html
+ delete mode 100644 JavaScript/js
+ delete mode 100644 JavaScript/js.txt
+ create mode 100644 JavaScript/js/main.js
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 2.31 KiB | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:RodGaiotto/WebDevTraining.git
+   030420e..79befd0  master -> master
+Branch master set up to track remote branch master from origin.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ pwd
+/home/rgaiotto/Desktop/HTML_CSS_Basic
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ 
+
+
+
+[rgaiotto@oc5255651151 ~]$ cd /home/rgaiotto/Desktop/HTML_CSS_Basic
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ cd JavaScript/
+[rgaiotto@oc5255651151 JavaScript]$ ls
+index2.html  index.html  js
+[rgaiotto@oc5255651151 JavaScript]$ cd ..
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git commit -m "Atualizações da aula de JS"
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	JavaScript/index2.html
+#	JavaScript/js/main2.js
+#	JavaScript/js/test.js
+nothing added to commit but untracked files present (use "git add" to track)
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add JavaScript/index2.html
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add JavaScript/js/main2.js
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git add JavaScript/js/test.js
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git commit -m "Atualizações da aula de JS"
+[master e54bf31] Atualizações da aula de JS
+ Committer: Rodrigo <rgaiotto@oc5255651151.ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 999 insertions(+)
+ create mode 100644 JavaScript/index2.html
+ create mode 100644 JavaScript/js/main2.js
+ create mode 100644 JavaScript/js/test.js
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ git push -u origin master
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 6.82 KiB | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:RodGaiotto/WebDevTraining.git
+   79befd0..e54bf31  master -> master
+Branch master set up to track remote branch master from origin.
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ ls
+apple_store_button.png   CONCEITOS.txt           image_top.jpeg  instagram.html      JavaScript  robot.jpg       style2.css  UX_UI_concepts.txt
+cellphone_instagram.png  google_play_button.png  index.html      instagram_logo.png  README.md   rodgaiotto.jpg  style.css
+[rgaiotto@oc5255651151 HTML_CSS_Basic]$ cd JavaScript
+[rgaiotto@oc5255651151 JavaScript]$ ls
+index2.html  index.html  js
+[rgaiotto@oc5255651151 JavaScript]$ cd js/
+[rgaiotto@oc5255651151 js]$ ls
+main2.js  main.js  test.js
+[rgaiotto@oc5255651151 js]$
+
